@@ -167,6 +167,7 @@ autocomplete-suggestion-list .icon {
 
   ol.list-group li {
     line-height: 2.25rem;
+    background: @overlay-background-color;
     padding-left: @component-padding/2;
     .transition(color);
 
@@ -187,7 +188,7 @@ autocomplete-suggestion-list .icon {
     }
 
     &.selected {
-      background: @overlay-background-color;
+      background: lighten(@overlay-background-color, 10%);
       .word {
         .text(highlight);
 
